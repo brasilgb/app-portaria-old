@@ -1,15 +1,20 @@
 {
   "expo": {
-    "name": "app-portaria",
+    "name": "Portaria Grupo Solar",
     "slug": "app-portaria",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "backgroundColor": "#29ABE2",
+      "barStyle": "light-content",
+      "translucent": false
+    },
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#29ABE2"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,11 +25,20 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#29ABE2"
+      },
+      "package": "com.gruposolar.portariagruposolar"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d15a14e3-012a-4bf0-96c7-adb9d6d22e32"
+      }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
   }
 }
